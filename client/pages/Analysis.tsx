@@ -47,7 +47,7 @@ export default function Analysis() {
       <div className="mx-auto max-w-7xl space-y-6">
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900 font-serif">GIS Analysis & Insights</h1>
+          <h1 className="text-3xl font-bold text-gray-900">GIS Analysis & Insights</h1>
           <p className="mt-2 text-gray-600 hide-description-mobile">
             Real-time analysis of rainfall, groundwater, and soil conditions for optimal rainwater harvesting
           </p>
@@ -61,7 +61,7 @@ export default function Analysis() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-gray-600">{item.title}</p>
-                    <p className="text-2xl font-bold text-gray-900 font-serif">{item.value}</p>
+                    <p className="text-2xl font-bold text-gray-900">{item.value}</p>
                   </div>
                   <div className={`rounded-full p-3 ${item.color}`}>
                     <item.icon className="h-6 w-6 text-white" />
@@ -74,7 +74,7 @@ export default function Analysis() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="font-serif">Analysis Filters</CardTitle>
+          <CardTitle>Analysis Filters</CardTitle>
         </CardHeader>
         <CardContent>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-4">
@@ -135,7 +135,7 @@ export default function Analysis() {
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <Card className="border-0 shadow-lg">
           <CardHeader>
-            <CardTitle className="font-serif">
+            <CardTitle>
             {metric === "savings"
               ? "Savings"
               : metric === "usage"
@@ -177,7 +177,7 @@ export default function Analysis() {
         
         <Card className="border-0 shadow-lg">
           <CardHeader>
-            <CardTitle className="font-serif">
+            <CardTitle>
             Usage vs Savings
             </CardTitle>
           </CardHeader>

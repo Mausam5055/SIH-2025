@@ -90,7 +90,7 @@ export default function Reports() {
       <div className="mx-auto max-w-7xl space-y-6">
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900 font-serif">Reports & Analytics</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Reports & Analytics</h1>
           <p className="mt-2 text-gray-600 hide-description-mobile">
             Download detailed reports and track your rainwater harvesting progress
           </p>
@@ -104,7 +104,7 @@ export default function Reports() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-gray-600">{stat.title}</p>
-                    <p className="text-2xl font-bold text-gray-900 font-serif">{stat.value}</p>
+                    <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
                   </div>
                   <div className={`rounded-full p-3 ${stat.color}`}>
                     <stat.icon className="h-6 w-6 text-white" />
@@ -117,7 +117,7 @@ export default function Reports() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center font-serif">
+          <CardTitle>
             <Filter className="mr-2 h-6 w-6 text-blue-600" />
             Filter & Search Reports
           </CardTitle>
@@ -177,7 +177,7 @@ export default function Reports() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="font-serif">Available Reports</CardTitle>
+          <CardTitle>Available Reports</CardTitle>
         </CardHeader>
         <CardContent className="p-0">
         <div className="overflow-x-auto">

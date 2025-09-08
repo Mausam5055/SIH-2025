@@ -46,7 +46,7 @@ export default function RoofDetection() {
       <div className="mx-auto max-w-4xl">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-gray-900 font-serif">AI Roof Detection</h1>
+          <h1 className="text-3xl font-bold text-gray-900">AI Roof Detection</h1>
           <p className="mt-2 text-gray-600 hide-description-mobile">
             Analyze your roof using advanced AI and get personalized rainwater harvesting recommendations
           </p>
@@ -103,7 +103,7 @@ export default function RoofDetection() {
         {detectionStep === 'select' && (
           <Card className="border-0 shadow-lg">
             <CardHeader>
-              <CardTitle className="font-serif">Choose Detection Method</CardTitle>
+              <CardTitle>Choose Detection Method</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -116,7 +116,7 @@ export default function RoofDetection() {
                   }`}
                 >
                   <Camera className="mx-auto h-12 w-12 text-blue-600" />
-                  <h3 className="mt-3 font-semibold font-serif">Live Camera</h3>
+                  <h3 className="mt-3 font-semibold">Live Camera</h3>
                   <p className="mt-1 text-sm text-gray-600">
                     Capture roof image using your device camera
                   </p>
@@ -131,7 +131,7 @@ export default function RoofDetection() {
                   }`}
                 >
                   <MapPin className="mx-auto h-12 w-12 text-green-600" />
-                  <h3 className="mt-3 font-semibold font-serif">Satellite Imagery</h3>
+                  <h3 className="mt-3 font-semibold">Satellite Imagery</h3>
                   <p className="mt-1 text-sm text-gray-600">
                     Analyze using Google Earth Engine API
                   </p>
@@ -146,7 +146,7 @@ export default function RoofDetection() {
                   }`}
                 >
                   <Upload className="mx-auto h-12 w-12 text-purple-600" />
-                  <h3 className="mt-3 font-semibold font-serif">Upload Image</h3>
+                  <h3 className="mt-3 font-semibold">Upload Image</h3>
                   <p className="mt-1 text-sm text-gray-600">
                     Upload existing roof image from gallery
                   </p>
@@ -169,7 +169,7 @@ export default function RoofDetection() {
         {detectionStep === 'select' && (
           <div className="mt-8 mb-8 w-full mx-auto">
             <div className="rounded-lg border border-gray-200 shadow-sm p-4 bg-white">
-              <h3 className="text-lg font-semibold text-gray-900 font-serif mb-2 text-center">Harvesting Plan Preview</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Harvesting Plan Preview</h3>
               <img 
                 src="/preview.jpg" 
                 alt="Harvesting Plan Diagram" 
@@ -186,7 +186,7 @@ export default function RoofDetection() {
         {detectionStep === 'capture' && (
           <Card className="border-0 shadow-lg">
             <CardHeader>
-              <CardTitle className="font-serif">
+              <CardTitle>
                 {detectionMethod === 'camera' && 'Camera Capture'}
                 {detectionMethod === 'satellite' && 'Satellite Analysis'}
                 {detectionMethod === 'upload' && 'Upload Image'}
@@ -396,7 +396,7 @@ export default function RoofDetection() {
             {/* Harvesting Plan Preview Diagram */}
             <Card className="border-0 shadow-lg mt-6">
               <CardHeader>
-                <CardTitle className="font-serif">Harvesting Plan Preview</CardTitle>
+                <CardTitle>Harvesting Plan Preview</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-col items-center">
