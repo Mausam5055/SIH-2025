@@ -9,6 +9,7 @@ Welcome to the documentation for SIH-2025, an AI-powered roof detection and wate
 3. [API Documentation](API.md) - Specification for all API endpoints and data models
 4. [Deployment Guide](DEPLOYMENT.md) - Instructions for deploying the application to various environments
 5. [Development Guide](DEVELOPMENT.md) - Guidelines for setting up the development environment and contributing to the project
+6. [Architecture Overview](ARCHITECTURE.md) - Detailed system architecture with diagrams and visual representations
 
 ## Overview
 
@@ -19,6 +20,19 @@ SIH-2025 is a modern web application built with React, Vite, TypeScript, and Exp
 - Financial ROI calculations for water harvesting systems
 - Community impact tracking
 - Multi-language support
+
+## Architecture Diagrams
+
+The [Architecture Overview](ARCHITECTURE.md) contains comprehensive diagrams including:
+
+- System architecture
+- Frontend component hierarchy
+- Backend API structure
+- Data flow sequences
+- Deployment pipeline
+- Technology stack visualization
+
+These diagrams help visualize how different parts of the system interact with each other.
 
 ## Getting Started
 
