@@ -2,6 +2,7 @@ import { createServer } from "../server";
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 export default async function handler(request: VercelRequest, response: VercelResponse) {
+  // Simple API response without Express server integration
   response.status(200).json({ 
     message: "Hello from the demo API!",
     timestamp: new Date().toISOString()
