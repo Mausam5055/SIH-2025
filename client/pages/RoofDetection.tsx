@@ -47,7 +47,7 @@ export default function RoofDetection() {
         {/* Header */}
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold text-gray-900">AI Roof Detection</h1>
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-gray-600 hide-description-mobile">
             Analyze your roof using advanced AI and get personalized rainwater harvesting recommendations
           </p>
         </div>

@@ -83,7 +83,7 @@ export default function Index() {
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               AI-Powered Rainwater Harvesting
             </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100 sm:text-xl">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100 sm:text-xl hide-description-mobile">
               Detect roof size using AI, get personalized recommendations, and maximize water conservation with intelligent analysis
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
