@@ -49,9 +49,9 @@ graph TD
     E --> F[Data Processing]
     F --> G[Response]
     B --> H[API Routes]
-    H --> I[/api/ping]
-    H --> J[/api/demo]
-    H --> K[/health]
+    H --> I["/api/ping"]
+    H --> J["/api/demo"]
+    H --> K["/health"]
 ```
 
 ## Deployment Architecture
