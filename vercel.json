@@ -7,25 +7,9 @@
       "config": {
         "distDir": "dist/spa"
       }
-    },
-    {
-      "src": "api/**/*.ts",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/ping",
-      "dest": "/api/ping.ts"
-    },
-    {
-      "src": "/api/demo",
-      "dest": "/api/demo.ts"
-    },
-    {
-      "src": "/health",
-      "dest": "/api/health.ts"
-    },
     {
       "src": "/assets/(.*)",
       "dest": "/dist/spa/assets/$1"
