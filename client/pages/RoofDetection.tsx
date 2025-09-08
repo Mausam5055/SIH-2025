@@ -99,6 +99,21 @@ export default function RoofDetection() {
           </div>
         </div>
 
+        {/* Harvesting Plan Preview Diagram - Visible on all steps */}
+        <div className="mb-8 w-full max-w-2xl mx-auto">
+          <div className="rounded-lg border border-gray-200 shadow-sm p-4 bg-white">
+            <h3 className="text-lg font-semibold text-gray-900 font-serif mb-2 text-center">Harvesting Plan Preview</h3>
+            <img 
+              src="/preview.jpg" 
+              alt="Harvesting Plan Diagram" 
+              className="w-full h-auto rounded-lg"
+            />
+            <p className="text-sm text-gray-500 mt-2 text-center">
+              Example visualization of a rainwater harvesting system
+            </p>
+          </div>
+        </div>
+
         {/* Step 1: Method Selection */}
         {detectionStep === 'select' && (
           <Card className="border-0 shadow-lg">
@@ -372,6 +387,30 @@ export default function RoofDetection() {
                   >
                     Analyze Another Roof
                   </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Harvesting Plan Preview Diagram */}
+            <Card className="border-0 shadow-lg mt-6">
+              <CardHeader>
+                <CardTitle className="font-serif">Harvesting Plan Preview</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-col items-center">
+                  <p className="text-gray-600 mb-4 text-center">
+                    Visual representation of the recommended rainwater harvesting system for your roof
+                  </p>
+                  <div className="w-full max-w-2xl mx-auto">
+                    <img 
+                      src="/preview.jpg" 
+                      alt="Harvesting Plan Diagram" 
+                      className="w-full h-auto rounded-lg border border-gray-200 shadow-sm"
+                    />
+                  </div>
+                  <p className="text-sm text-gray-500 mt-3 text-center">
+                    Diagram shows the optimal placement and configuration of the harvesting system based on your roof analysis
+                  </p>
                 </div>
               </CardContent>
             </Card>
