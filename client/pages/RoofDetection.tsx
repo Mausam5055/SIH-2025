@@ -99,21 +99,6 @@ export default function RoofDetection() {
           </div>
         </div>
 
-        {/* Harvesting Plan Preview Diagram - Visible on all steps */}
-        <div className="mb-8 w-full max-w-2xl mx-auto">
-          <div className="rounded-lg border border-gray-200 shadow-sm p-4 bg-white">
-            <h3 className="text-lg font-semibold text-gray-900 font-serif mb-2 text-center">Harvesting Plan Preview</h3>
-            <img 
-              src="/preview.jpg" 
-              alt="Harvesting Plan Diagram" 
-              className="w-full h-auto rounded-lg"
-            />
-            <p className="text-sm text-gray-500 mt-2 text-center">
-              Example visualization of a rainwater harvesting system
-            </p>
-          </div>
-        </div>
-
         {/* Step 1: Method Selection */}
         {detectionStep === 'select' && (
           <Card className="border-0 shadow-lg">
@@ -178,6 +163,23 @@ export default function RoofDetection() {
               </div>
             </CardContent>
           </Card>
+        )}
+
+        {/* Harvesting Plan Preview Diagram - Below roof detection method section */}
+        {detectionStep === 'select' && (
+          <div className="mt-8 mb-8 w-full mx-auto">
+            <div className="rounded-lg border border-gray-200 shadow-sm p-4 bg-white">
+              <h3 className="text-lg font-semibold text-gray-900 font-serif mb-2 text-center">Harvesting Plan Preview</h3>
+              <img 
+                src="/preview.jpg" 
+                alt="Harvesting Plan Diagram" 
+                className="w-full h-auto rounded-lg"
+              />
+              <p className="text-sm text-gray-500 mt-2 text-center">
+                Example visualization of a rainwater harvesting system
+              </p>
+            </div>
+          </div>
         )}
 
         {/* Step 2: Capture/Upload */}
@@ -401,7 +403,7 @@ export default function RoofDetection() {
                   <p className="text-gray-600 mb-4 text-center">
                     Visual representation of the recommended rainwater harvesting system for your roof
                   </p>
-                  <div className="w-full max-w-2xl mx-auto">
+                  <div className="w-full mx-auto">
                     <img 
                       src="/preview.jpg" 
                       alt="Harvesting Plan Diagram" 
