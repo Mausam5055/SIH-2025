@@ -107,6 +107,16 @@
   }
 }
 
+/* Hide scrollbars globally */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+}
+
 /* Hide descriptions below headings in mobile view */
 @media (max-width: 768px) {
   .hide-description-mobile {

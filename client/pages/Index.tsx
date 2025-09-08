@@ -75,39 +75,6 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 px-4 py-12 text-white sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative mx-auto max-w-7xl">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-              AI-Powered Rainwater Harvesting
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100 sm:text-xl hide-description-mobile">
-              Detect roof size using AI, get personalized recommendations, and maximize water conservation with intelligent analysis
-            </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Button 
-                size="lg" 
-                className="bg-white text-blue-600 hover:bg-blue-50"
-                onClick={() => document.getElementById('roof-detection')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                <Camera className="mr-2 h-5 w-5" />
-                Start Roof Analysis
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white/10"
-              >
-                <Globe className="mr-2 h-5 w-5" />
-                View Impact Dashboard
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {/* KPI Cards */}
         <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
