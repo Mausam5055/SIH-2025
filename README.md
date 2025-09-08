@@ -24,6 +24,19 @@ A modern full-stack web application built with React, Vite, TypeScript, and Expr
 | **Roof Detection** | AI-powered roof analysis for rainwater harvesting |
 | **Community Features** | Social interaction and collaboration tools |
 
+## 📚 Documentation
+
+Comprehensive documentation is available in the [documentation](documentation/) directory:
+
+| Document | Description |
+|----------|-------------|
+| [Frontend](documentation/FRONTEND.md) | Detailed frontend architecture and implementation |
+| [Backend](documentation/BACKEND.md) | Backend API and server configuration |
+| [API](documentation/API.md) | API endpoints and data models |
+| [Deployment](documentation/DEPLOYMENT.md) | Deployment guide and best practices |
+| [Development](documentation/DEVELOPMENT.md) | Development workflow and contribution guidelines |
+| [Architecture](documentation/ARCHITECTURE.md) | System architecture and diagrams |
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -101,6 +114,7 @@ SIH-2025/
 ├── public/                 # Static assets
 ├── api/                    # Vercel serverless functions
 ├── netlify/                # Netlify serverless functions
+├── documentation/          # Project documentation
 └── dist/                   # Production build output
 ```
 
