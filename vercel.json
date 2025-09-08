@@ -27,8 +27,16 @@
       "dest": "/api/health.ts"
     },
     {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|json|webp))",
+      "src": "/assets/(.*)",
+      "dest": "/dist/spa/assets/$1"
+    },
+    {
+      "src": "/(.+\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|json|webp))",
       "dest": "/dist/spa/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/dist/spa/index.html"
     },
     {
       "src": "/(.*)",
