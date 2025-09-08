@@ -84,7 +84,7 @@ export default function Index() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-gray-600">{kpi.title}</p>
-                    <p className="text-2xl font-bold text-gray-900 font-serif">{kpi.value}</p>
+                    <p className="text-2xl font-bold text-gray-900">{kpi.value}</p>
                     <p className="text-sm text-green-600">{kpi.delta}</p>
                   </div>
                   <div className={`rounded-full p-3 ${kpi.color}`}>
