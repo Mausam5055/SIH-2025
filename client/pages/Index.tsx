@@ -84,7 +84,7 @@ export default function Index() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-gray-600">{kpi.title}</p>
-                    <p className="text-2xl font-bold text-gray-900">{kpi.value}</p>
+                    <p className="text-2xl font-bold text-gray-900 font-serif">{kpi.value}</p>
                     <p className="text-sm text-green-600">{kpi.delta}</p>
                   </div>
                   <div className={`rounded-full p-3 ${kpi.color}`}>
@@ -99,7 +99,7 @@ export default function Index() {
         {/* Roof Detection Section */}
         <Card id="roof-detection" className="mb-8 border-0 shadow-lg">
           <CardHeader>
-            <CardTitle className="flex items-center text-xl">
+            <CardTitle className="flex items-center text-xl font-serif">
               <Camera className="mr-2 h-6 w-6 text-blue-600" />
               AI Roof Detection & Analysis
             </CardTitle>
@@ -108,7 +108,7 @@ export default function Index() {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
               {/* Detection Method Selection */}
               <div className="space-y-4">
-                <h3 className="text-lg font-semibold">Choose Detection Method</h3>
+                <h3 className="text-lg font-semibold font-serif">Choose Detection Method</h3>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                   <button
                     onClick={() => setDetectionMethod('camera')}
@@ -164,7 +164,7 @@ export default function Index() {
 
               {/* GIS Integration Panel */}
               <div className="space-y-4">
-                <h3 className="text-lg font-semibold">Real-time GIS Data</h3>
+                <h3 className="text-lg font-semibold font-serif">Real-time GIS Data</h3>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="rounded-lg bg-blue-50 p-3">
                     <p className="text-sm font-medium text-blue-800">Rainfall</p>

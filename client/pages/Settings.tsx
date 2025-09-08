@@ -25,7 +25,7 @@ export default function Settings() {
       <div className="mx-auto max-w-4xl space-y-6">
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Settings</h1>
+          <h1 className="text-3xl font-bold text-gray-900 font-serif">Settings</h1>
           <p className="mt-2 text-gray-600 hide-description-mobile">
             Customize your experience and manage your preferences
           </p>
@@ -33,7 +33,7 @@ export default function Settings() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center">
+          <CardTitle className="flex items-center font-serif">
             <User className="mr-2 h-6 w-6 text-blue-600" />
             Profile Information
           </CardTitle>
@@ -91,7 +91,7 @@ export default function Settings() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center">
+          <CardTitle className="flex items-center font-serif">
             <Bell className="mr-2 h-6 w-6 text-green-600" />
             Notification Preferences
           </CardTitle>
@@ -136,7 +136,7 @@ export default function Settings() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center">
+          <CardTitle className="flex items-center font-serif">
             <Smartphone className="mr-2 h-6 w-6 text-purple-600" />
             App Preferences
           </CardTitle>
@@ -184,7 +184,7 @@ export default function Settings() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center">
+          <CardTitle className="flex items-center font-serif">
             <Shield className="mr-2 h-6 w-6 text-red-600" />
             Privacy & Security
           </CardTitle>
@@ -192,7 +192,7 @@ export default function Settings() {
         <CardContent>
         <div className="space-y-4">
           <div className="rounded-lg bg-blue-50 p-4">
-            <h4 className="font-medium text-blue-900">Data Usage</h4>
+            <h4 className="font-medium text-blue-900 font-serif">Data Usage</h4>
             <p className="mt-1 text-sm text-blue-700">
               Your data is used only for analysis and recommendations. We never share personal information with third parties.
             </p>

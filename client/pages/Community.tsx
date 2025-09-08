@@ -79,7 +79,7 @@ export default function Community() {
       <div className="mx-auto max-w-7xl space-y-6">
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Community Hub</h1>
+          <h1 className="text-3xl font-bold text-gray-900 font-serif">Community Hub</h1>
           <p className="mt-2 text-gray-600 hide-description-mobile">
             Connect, share knowledge, and learn from fellow rainwater harvesting enthusiasts
           </p>
@@ -93,7 +93,7 @@ export default function Community() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-gray-600">{stat.title}</p>
-                    <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
+                    <p className="text-2xl font-bold text-gray-900 font-serif">{stat.value}</p>
                   </div>
                   <div className={`rounded-full p-3 ${stat.color}`}>
                     <stat.icon className="h-6 w-6 text-white" />
@@ -106,7 +106,7 @@ export default function Community() {
 
       <Card className="border-0 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center">
+          <CardTitle className="flex items-center font-serif">
             <MessageCircle className="mr-2 h-6 w-6 text-blue-600" />
           Create Post
           </CardTitle>
@@ -147,7 +147,7 @@ export default function Community() {
             className="border-0 shadow-lg transition-all hover:shadow-xl"
           >
             <CardContent className="p-6">
-              <div className="flex items-start justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <Badge 
@@ -164,7 +164,7 @@ export default function Community() {
                     </Badge>
                     <span className="text-sm text-gray-500">by {p.author}</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3 font-serif">
                   {p.title}
                   </h4>
                   <div className="flex items-center gap-6 text-sm text-gray-500">
@@ -182,13 +182,19 @@ export default function Community() {
                     </div>
                   </div>
                 </div>
-                <div className="text-right">
-                  <span className="text-sm text-gray-500">{p.time} ago</span>
-                  <div className="mt-2 flex gap-2">
-                    <Button size="sm" variant="outline">
+                <div className="mt-4 sm:mt-0 sm:text-right">
+                  <span className="text-sm text-gray-500 block mb-2 sm:mb-0">{p.time} ago</span>
+                  <div className="flex sm:flex-col gap-2 sm:gap-1">
+                    <Button size="sm" variant="outline" className="sm:hidden">
+                      <Heart className="h-4 w-4" />
+                    </Button>
+                    <Button size="sm" variant="outline" className="sm:hidden">
+                      <Share2 className="h-4 w-4" />
+                    </Button>
+                    <Button size="sm" variant="outline" className="hidden sm:flex">
                       Reply
                     </Button>
-                    <Button size="sm" variant="outline">
+                    <Button size="sm" variant="outline" className="hidden sm:flex">
                       Share
                     </Button>
                   </div>
