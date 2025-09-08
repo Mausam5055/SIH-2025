@@ -303,12 +303,12 @@ export default function Index() {
                     +{languages.length - 8} more
                   </Badge>
                 </div>
-                <div className="mt-4 flex gap-2">
-                  <Button variant="outline" size="sm">
+                <div className="mt-4 flex flex-col sm:flex-row gap-2">
+                  <Button variant="outline" size="sm" className="w-full sm:w-auto">
                     <Globe className="mr-2 h-4 w-4" />
                     Change Language
                   </Button>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" className="w-full sm:w-auto">
                     Offline Mode
                   </Button>
                 </div>
