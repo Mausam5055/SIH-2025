@@ -48,7 +48,7 @@ export default function Analysis() {
         {/* Header */}
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900">GIS Analysis & Insights</h1>
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-gray-600 hide-description-mobile">
             Real-time analysis of rainfall, groundwater, and soil conditions for optimal rainwater harvesting
           </p>
         </div>

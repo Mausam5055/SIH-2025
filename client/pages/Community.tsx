@@ -80,7 +80,7 @@ export default function Community() {
         {/* Header */}
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900">Community Hub</h1>
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-gray-600 hide-description-mobile">
             Connect, share knowledge, and learn from fellow rainwater harvesting enthusiasts
           </p>
         </div>

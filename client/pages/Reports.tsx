@@ -91,7 +91,7 @@ export default function Reports() {
         {/* Header */}
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900">Reports & Analytics</h1>
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-gray-600 hide-description-mobile">
             Download detailed reports and track your rainwater harvesting progress
           </p>
         </div>

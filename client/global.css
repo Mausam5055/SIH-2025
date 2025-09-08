@@ -106,3 +106,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+/* Hide descriptions below headings in mobile view */
+@media (max-width: 768px) {
+  .hide-description-mobile {
+    display: none;
+  }
+}
