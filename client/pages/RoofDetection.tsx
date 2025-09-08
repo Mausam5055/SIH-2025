@@ -54,7 +54,8 @@ export default function RoofDetection() {
 
         {/* Progress Steps */}
         <div className="mb-8 flex items-center justify-center">
-          <div className="flex items-center space-x-4">
+          {/* Desktop view - unchanged */}
+          <div className="hidden md:flex items-center space-x-4">
             {['Select Method', 'Capture/Upload', 'AI Analysis', 'Results'].map((step, index) => (
               <div key={step} className="flex items-center">
                 <div className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium ${
@@ -68,6 +69,33 @@ export default function RoofDetection() {
                 {index < 3 && <div className="ml-4 h-0.5 w-8 bg-gray-200"></div>}
               </div>
             ))}
+          </div>
+          
+          {/* Mobile view - improved for better visibility */}
+          <div className="md:hidden w-full max-w-xs">
+            <div className="flex justify-between">
+              {['Select Method', 'Capture/Upload', 'AI Analysis', 'Results'].map((step, index) => (
+                <div key={step} className="flex flex-col items-center">
+                  <div className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium ${
+                    index <= ['select', 'capture', 'processing', 'results'].indexOf(detectionStep)
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-200 text-gray-600'
+                  }`}>
+                    {index + 1}
+                  </div>
+                  <span className="mt-1 text-xs font-medium text-gray-600 text-center">{step}</span>
+                </div>
+              ))}
+            </div>
+            {/* Progress bar for mobile */}
+            <div className="mt-2 h-1 w-full bg-gray-200 rounded-full">
+              <div 
+                className="h-1 bg-blue-600 rounded-full transition-all duration-300"
+                style={{ 
+                  width: `${(['select', 'capture', 'processing', 'results'].indexOf(detectionStep) / 3) * 100}%` 
+                }}
+              ></div>
+            </div>
           </div>
         </div>
 
