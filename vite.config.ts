@@ -24,7 +24,8 @@ export default defineConfig(({ mode }) => ({
           charts: ['recharts'],
         }
       }
-    }
+    },
+    copyPublicDir: true, // Ensure public directory is copied to build
   },
   plugins: [react(), expressPlugin()],
   resolve: {
@@ -33,6 +34,9 @@ export default defineConfig(({ mode }) => ({
       "@shared": path.resolve(__dirname, "./shared"),
     },
   },
+  root: ".", // Set the root to the project directory
+  base: "/", // Set the base path for the application
+  publicDir: "public", // Specify the public directory
 }));
 
 function expressPlugin(): Plugin {

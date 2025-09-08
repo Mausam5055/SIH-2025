@@ -4,12 +4,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:client",
+    "build": "vite build",
     "build:client": "vite build",
     "start": "vite preview",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
@@ -57,6 +58,7 @@
     "@types/react-dom": "^18.3.7",
     "@types/three": "^0.176.0",
     "@vitejs/plugin-react-swc": "^4.0.0",
+    "@vercel/node": "^5.0.0",
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
